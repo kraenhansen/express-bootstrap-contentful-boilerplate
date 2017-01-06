@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css')
+    - // link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Athiti|Noto+Sans|Open+Sans+Condensed:300|Oxygen|Quicksand|Roboto+Condensed')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Amatic+SC')
+    link(rel='stylesheet', href='/stylesheets/main.min.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimum-scale=1')
+    - // meta(name='viewport', content='initial-scale=1, maximum-scale=1, minimum-scale=1')
+  body(class=hideOverflow ? 'hide-overflow': '')
+    block content
+    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js',
+           integrity='sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc='
+           crossorigin='anonymous')
+    - //script(src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js')
+    script(src='/javascripts/main.js')
